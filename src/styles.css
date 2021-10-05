@@ -41,3 +41,12 @@ tbody td {
 tbody tr:hover {
   background-color: #eee;
 }
+
+input {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: solid;
+    font-size: 16px;
+}

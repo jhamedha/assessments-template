@@ -10,7 +10,7 @@ export interface countryInfo extends IObjectKeys {
 }
 
 interface IObjectKeys {
-    [key: string]: string | string [];
+    [key: string]: string | string[];
 }
 
 export interface sort {
