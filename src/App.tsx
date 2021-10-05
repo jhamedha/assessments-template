@@ -6,8 +6,8 @@ function App() {
   const [countryData, setCountryData] = useState([]);
 
   useEffect(() => {
-    const fetchCountryData = async() => {
-      await fetch('http://api.countrylayer.com/v2/all?access_key=xx')
+    const fetchCountryData = async () => {
+      await fetch('http://api.countrylayer.com/v2/all?access_key=INSERT_API_KEY')
         .then(results => results.json())
         .then(data => {
           setCountryData(data);
@@ -18,8 +18,8 @@ function App() {
 
   return (
     <CountryTable
-        countryData = {countryData}
-      />
+      countryData={countryData}
+    />
   );
 }
 
