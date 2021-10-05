@@ -15,12 +15,22 @@ thead th {
 
 thead button {
   border: 0;
-  border-radius: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: inherit;
+  border-radius: 5px;
   padding: 0.5em;
   margin-bottom: 1px;
+  font-size: 16px;
+}
+
+thead button.ascending::after {
+  content: "⬆️";
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: "⬇️";
+  display: inline-block;
+  margin-left: 1em;
 }
 
 tbody td {
